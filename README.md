@@ -1,1 +1,5 @@
-# zenn-shimizu-saffle
+# プレビュー
+
+% npx zenn preview
+
+# 👀 Preview on http://localhost:8000
