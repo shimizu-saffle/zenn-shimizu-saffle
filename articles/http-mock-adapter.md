@@ -196,7 +196,7 @@ Future<void> main() async {
 
 https://github.com/seigi0714/trip-app-nativeapp/blob/main/test/core/http/api_client/api_client_test.dart
 
-### References
+## 🙏 References
 
 https://pub.dev/packages/http_mock_adapter
 
