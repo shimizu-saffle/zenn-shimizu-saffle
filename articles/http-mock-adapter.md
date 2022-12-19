@@ -23,7 +23,7 @@ http_mock_adapter は、テストで使用することを目的とした [dio](h
 1. **http_mock_adapter** を pubspec.yaml の dev_dependencies に追加
 2. `flutter pub get` を実行
 
-### 💡VSCode の Flutter 拡張機能を使った `pub add`
+#### 💡VSCode の Flutter 拡張機能を使った `pub add`
 
 ![](/images/clean-shot-2022-12-18-at-14-50-48.gif.gif)
 
