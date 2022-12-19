@@ -3,7 +3,7 @@ title: '[dio × riverpod] http_mock_adapter で APIクライアントのテス�
 emoji: '🧪'
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: [flutter, dart, riverpod, test]
-published: false
+published: true
 ---
 
 <!-- この記事は [株式会社 TORICO Advent Calendar 2022](https://qiita.com/advent-calendar/2022/torico) 19 日目の記事です 🎄 -->
