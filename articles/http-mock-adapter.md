@@ -73,7 +73,7 @@ void main() async {
 
 `DioAdapter` の `onGet` メソッドの第一引数で渡したパスに、`DioAdapter` のコンストラクタに渡した `Dio` インスタンスが `get` メソッドでリクエストした際に返ってくる、モックレスポンスのステータスコード、レスポンスボディ、そのリクエストに必要なリクエストボディ、クエリパラメータ等を指定することができます。
 
-`onGet` 以外にも、[Dio](https://pub.dev/documentation/dio/latest/dio/Dio-class.html) の　 post, put, delete 等に対応する、`onPost` , `onPut` ,`onDelete` 等も定義されています 🙌
+`onGet` 以外にも、[Dio](https://pub.dev/documentation/dio/latest/dio/Dio-class.html) の post, put, delete 等に対応する、`onPost` , `onPut` ,`onDelete` 等も定義されています 🙌
 
 https://pub.dev/documentation/http_mock_adapter/latest/http_mock_adapter/DioAdapter-class.html
 
@@ -82,6 +82,12 @@ https://pub.dev/documentation/http_mock_adapter/latest/http_mock_adapter/DioAdap
 Dio を用いた HTTP 通信時のヘッダーに付与する情報、エラーハンドリング、 レスポンスボディで返される JSON のパース処理などを共通化するために、アプリケーション内で独自の API クライアントクラスを定義して使うことがあると思います。
 
 以下は、[riverpod](https://pub.dev/packages/riverpod) パッケージの [Provider](https://docs-v2.riverpod.dev/docs/providers/provider) を使って、Dio インスタンスを DI した API クライアントクラスのユニットテストの例です 🧪
+
+### API クライアント
+
+https://github.com/seigi0714/trip-app-nativeapp/blob/main/lib/core/http/api_client/api_client.dart
+
+### ユニットテスト
 
 ```dart
 import 'dart:io';
@@ -195,8 +201,6 @@ Future<void> main() async {
 以上です！最後まで読んでくださってありがとうございます ( ◜ ◡ ◝ ) 🫧
 
 上記のサンプルコードの全体はこちらから見れます 👀
-
-https://github.com/seigi0714/trip-app-nativeapp/blob/main/lib/core/http/api_client/api_client.dart
 
 https://github.com/seigi0714/trip-app-nativeapp/blob/main/test/core/http/api_client/api_client_test.dart
 
