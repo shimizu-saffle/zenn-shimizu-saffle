@@ -14,13 +14,13 @@ published: false
 
 http_mock_adapter は、テストで使用することを目的とした [dio](https://pub.dev/packages/dio) を用いた HTTP 通信のモッキングができるパッケージです。
 
-宣言的にモッキングできるので、扱いやすくておすすめです 🎁
+HTTP 通信を宣言的にモッキングできるので、扱いやすくておすすめです 🎁
 
 ## インストール
 
 パッケージの [Readme](https://pub.dev/packages/http_mock_adapter) に記されている手順でパッケージをインストールします。
 
-1. **http_mock_adapter** を pubspec.yaml の dev_dependencies に追加
+1. http_mock_adapter を pubspec.yaml の dev_dependencies に追加
 2. `flutter pub get` を実行
 
 #### 💡VSCode の Flutter 拡張機能を使った `pub add`
@@ -73,7 +73,9 @@ void main() async {
 
 `DioAdapter` の `onGet` メソッドの第一引数で渡したパスに、`DioAdapter` のコンストラクタに渡した `Dio` インスタンスが `get` メソッドでリクエストした際に返ってくる、モックレスポンスのステータスコード、レスポンスボディ、そのリクエストに必要なリクエストボディ、クエリパラメータ等を指定することができます。
 
-`onGet` 以外にも、`post`, `put`, `delete` に対応する、`onPost` , `onPut` ,`onDelete` 等も定義されています 🙌
+`onGet` 以外にも、[Dio](https://pub.dev/documentation/dio/latest/dio/Dio-class.html) の　 post, put, delete 等に対応する、`onPost` , `onPut` ,`onDelete` 等も定義されています 🙌
+
+https://pub.dev/documentation/http_mock_adapter/latest/http_mock_adapter/DioAdapter-class.html
 
 ## Riverpod で Dio を DI した API クライアントのユニットテスト
 
@@ -193,6 +195,8 @@ Future<void> main() async {
 以上です！最後まで読んでくださってありがとうございます ( ◜ ◡ ◝ ) 🫧
 
 上記のサンプルコードの全体はこちらから見れます 👀
+
+https://github.com/seigi0714/trip-app-nativeapp/blob/main/lib/core/http/api_client/api_client.dart
 
 https://github.com/seigi0714/trip-app-nativeapp/blob/main/test/core/http/api_client/api_client_test.dart
 
