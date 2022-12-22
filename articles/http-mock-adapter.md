@@ -73,7 +73,7 @@ void main() async {
 
 `DioAdapter` の `onGet` メソッドの第一引数で渡したパスに、`DioAdapter` のコンストラクタに渡した `Dio` インスタンスが `get` メソッドでリクエストした際に返ってくる、モックレスポンスのステータスコード、レスポンスボディ、そのリクエストに必要なリクエストボディ、クエリパラメータ等を指定することができます。
 
-`onGet` 以外にも、[Dio](https://pub.dev/documentation/dio/latest/dio/Dio-class.html) の post, put, delete 等に対応する、`onPost` , `onPut` ,`onDelete` 等も定義されています 🙌
+`onGet` 以外にも、[Dio](https://pub.dev/documentation/dio/latest/dio/Dio-class.html) の post, put, delete 等に対応する、`onPost` , `onPut` ,`onDelete` 等も定義されています 👐
 
 https://pub.dev/documentation/http_mock_adapter/latest/http_mock_adapter/DioAdapter-class.html
 
