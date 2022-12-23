@@ -109,8 +109,8 @@ Future<void> main() async {
     // [ApiClient] アプリケーション内に定義している、独自のAPIクライアント
     'ApiClient test',
     () {
-      // setUp()内で初期化して、group()内の全てのテストケースで使用するため
-      // lateキーワードを付け、ここで宣言。
+      // setUp 内で初期化して group 内の全てのテストケースで使用するため
+      // late キーワードを付け、ここで宣言。
       late DioAdapter dioAdapter;
       late ProviderContainer container; // Provider が持つ状態を保持するコンテナ
 
