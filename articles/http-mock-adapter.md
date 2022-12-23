@@ -116,7 +116,7 @@ Future<void> main() async {
 
       const dummyEndpoint = '/dummy-endpoint';
 
-      // setUp は group内の全てのテスト実行前に呼び出される。
+      // setUp は group 内の全てのテスト実行前に呼び出される。
       setUp(
         () {
           // テスト用の Dio をインスタンス化
